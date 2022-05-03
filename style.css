@@ -1,0 +1,46 @@
+.container{
+    background: #999;
+    width: 1000px;
+    margin: 80px auto;
+
+    display: grid;
+
+    /* 2 rangées */
+    grid-template-rows: repeat(2,150px);
+    /* 3 colonnes */
+    grid-template-columns: repeat(3, 150px);
+    
+    /* gouttières */
+    grid-gap: 30px;
+
+}
+.items{
+    padding: 20px;
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.item1{
+    /* emplacement des items sur l'axe des rangées (row) début/fin */
+    /* emplacement des items sur l'axe des colonnes (columns)  début/fin */
+    /* début rangée/début colonne/fin rangée/fin colonne*/
+    grid-area: 2/3/3/4;
+    
+    background-color: orange;
+}
+.item2{
+    background-color: indianred;
+}
+.item3{
+    background-color: darkcyan;
+}
+.item4{
+    background-color: rebeccapurple;
+}
+.item5{
+    background-color: greenyellow;
+}
+.item6{
+    background-color: hotpink;
+}
